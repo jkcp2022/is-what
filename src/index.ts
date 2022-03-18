@@ -413,3 +413,5 @@ export function isType<T extends AnyFunction | AnyClass>(payload: any, type: T):
   const name: string | undefined | null = (type as any).name
   return getType(payload) === name || Boolean(payload && payload.constructor === type)
 }
+
+//
